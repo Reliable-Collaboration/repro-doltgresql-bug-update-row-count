@@ -5,6 +5,8 @@ On DoltgreSQL 1.3.1, the command tag of an `UPDATE` counts only the rows whose v
 the `UPDATE` matched, changed or not, and answers `UPDATE 1`; for an `UPDATE` that matches two rows and
 changes one, PostgreSQL answers `UPDATE 2` and DoltgreSQL `UPDATE 1`.
 
+Reported upstream as a comment on https://github.com/dolthub/doltgresql/issues/3113: https://github.com/dolthub/doltgresql/issues/3113#issuecomment-5628519218
+
 ## Reproduce it
 
 You need Docker and a POSIX shell: Linux, macOS, or Windows with WSL. The first run downloads the images.
